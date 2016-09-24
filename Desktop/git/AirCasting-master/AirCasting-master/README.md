@@ -1,12 +1,8 @@
-[![Build Status](https://secure.travis-ci.org/HabitatMap/AirCasting.png)](https://travis-ci.org/HabitatMap/AirCasting)
-[![Code Climate](https://codeclimate.com/github/HabitatMap/AirCasting/badges/gpa.svg)](https://codeclimate.com/github/HabitatMap/AirCasting)
-
-##AirCasting - Share your Air!
+##COMP90019: AirCasting Server
 
 ###About
 
-This is the AirCasting project - the project aims to build a platform for gathering, visualization and sharing of environmental data. To learn more about the platform visit [aircasting.org](http://aircasting.org).
-
+These are the steps to install a ruby server in order to recieve data from Aircasting Android App and then storing that data to MySQL.
 ###Developing
 
 For a [Debian](http://debian.org)/[Ubuntu](http://ubuntu.com) system, the easiest way to start is:
@@ -37,7 +33,7 @@ rvm use 2.0.0
 **clone sources**
 
 ```
-git clone git://github.com/HabitatMap/AirCasting.git aircasting
+git clone https://github.com/Arjun-Chaudhary/COMP90019.git aircasting
 cd aircasting
 cp config/database.yml.example config/database.yml
 ```
@@ -66,35 +62,3 @@ cp config/database.yml.example config/database.yml
 bundle exec rspec
 bundle exec rake spec:javascript
 ```
-
-### ElasticSearch
-
-Read more [here](doc/elasticsearch.md).
-
-### API documentation
-
-Read more [here](doc/api.md).
-
-###Troubleshooting
-
-* `Mysql2::Error: All parts of a PRIMARY KEY must be NOT NULL; if you need
-NULL in a key, use UNIQUE instead (...)`
-
- If you see this error, you need to downgrade MySql database server to ver. 5.6. We don't support the latest MySql server version yet.
-
-###Contribute
-
-If you'd like to contribute just use the usual github process - fork, make changes, issue a pull request.
-
-###Contact
-
-You can contact the authors by email at [info@habitatmap.org](mailto:info@habitatmap.org).
-
-###Thanks
-AirCasting uses The YourKit Java Profiler for Performance Tuning
-
-YourKit is kindly supporting open source projects with its full-featured Java Profiler. YourKit, LLC is the creator of innovative and intelligent tools for profiling Java and .NET applications. Take a look at YourKit's leading software products: [YourKit Java Profiler](http://www.yourkit.com/java/profiler/index.jsp) and [YourKit .NET Profiler](http://www.yourkit.com/.net/profiler/index.jsp).
-
-###License
-
-The project is licensed under the GNU Affero GPLv3. For more information see COPYING and visit [http://www.gnu.org/licenses/agpl.html](http://www.gnu.org/licenses/agpl.html).
